@@ -1,0 +1,253 @@
+/* ======================================
+   MV SYSTEM
+   Background.css
+====================================== */
+
+:root{
+
+    --bg:#09090B;
+
+    --card:#18181B;
+
+    --primary:#E11D48;
+
+    --primary2:#FF2E63;
+
+    --text:#FFFFFF;
+
+    --text2:#A1A1AA;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    margin:0;
+
+    padding:0;
+
+    overflow-x:hidden;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    position:relative;
+
+}
+
+
+/* ================================
+   Background
+================================ */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at top,
+    rgba(225,29,72,.18),
+    transparent 40%),
+
+    radial-gradient(circle at bottom,
+    rgba(225,29,72,.12),
+    transparent 45%),
+
+    linear-gradient(
+        180deg,
+        #09090B,
+        #0F0F14
+    );
+
+    z-index:-20;
+
+}
+
+
+/* ================================
+   Huge Logo
+================================ */
+
+body::after{
+
+    content:"MV";
+
+    position:fixed;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:520px;
+
+    font-weight:900;
+
+    font-family:Poppins,sans-serif;
+
+    color:#ffffff08;
+
+    pointer-events:none;
+
+    user-select:none;
+
+    z-index:-15;
+
+}
+
+
+/* ================================
+   Red Glow
+================================ */
+
+.red-glow{
+
+    position:fixed;
+
+    width:900px;
+
+    height:900px;
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    rgba(225,29,72,.20),
+
+    transparent 70%
+
+    );
+
+    filter:blur(60px);
+
+    left:-200px;
+
+    top:-200px;
+
+    z-index:-18;
+
+    animation:glowMove 18s infinite alternate ease-in-out;
+
+}
+
+
+@keyframes glowMove{
+
+    0%{
+
+        transform:
+
+        translate(0,0);
+
+    }
+
+    100%{
+
+        transform:
+
+        translate(300px,180px);
+
+    }
+
+}
+
+
+/* ================================
+   Grid
+================================ */
+
+.grid{
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(
+
+        rgba(255,255,255,.03) 1px,
+
+        transparent 1px
+
+    ),
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.03) 1px,
+
+        transparent 1px
+
+    );
+
+    background-size:50px 50px;
+
+    z-index:-17;
+
+}
+
+
+/* ================================
+   Floating Particles
+================================ */
+
+.particle{
+
+    position:fixed;
+
+    width:4px;
+
+    height:4px;
+
+    background:#E11D48;
+
+    border-radius:50%;
+
+    box-shadow:
+
+    0 0 10px #E11D48,
+
+    0 0 20px #E11D48;
+
+    opacity:.45;
+
+    animation:particle 14s linear infinite;
+
+}
+
+
+@keyframes particle{
+
+    from{
+
+        transform:
+
+        translateY(100vh);
+
+    }
+
+    to{
+
+        transform:
+
+        translateY(-100vh);
+
+    }
+
+}
