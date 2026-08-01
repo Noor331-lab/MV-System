@@ -1,0 +1,221 @@
+/* ==========================================
+   MV SYSTEM
+   glass.css
+========================================== */
+
+
+/* ================================
+   Header
+================================ */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    background:rgba(17,17,21,.55);
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,.08);
+
+}
+
+
+/* ================================
+   Glass Card
+================================ */
+
+.glass{
+
+    background:
+
+    rgba(24,24,27,.55);
+
+    backdrop-filter:
+
+    blur(18px);
+
+    -webkit-backdrop-filter:
+
+    blur(18px);
+
+    border:
+
+    1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+}
+
+
+/* ================================
+   Hero
+================================ */
+
+.hero{
+
+    width:min(900px,90%);
+
+    margin:auto;
+
+    margin-top:120px;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    background:
+
+    rgba(24,24,27,.45);
+
+    backdrop-filter:
+
+    blur(18px);
+
+    border:
+
+    1px solid rgba(255,255,255,.08);
+
+}
+
+
+/* ================================
+   Feature Cards
+================================ */
+
+.card{
+
+    background:
+
+    rgba(24,24,27,.55);
+
+    border-radius:22px;
+
+    border:
+
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:
+
+    blur(18px);
+
+    transition:
+
+    .35s ease;
+
+}
+
+
+/* ================================
+   Hover
+================================ */
+
+.card:hover{
+
+    transform:
+
+    translateY(-8px);
+
+    border-color:
+
+    #E11D48;
+
+    box-shadow:
+
+    0 0 35px rgba(225,29,72,.25);
+
+}
+
+
+/* ================================
+   Buttons
+================================ */
+
+.discord{
+
+    transition:.35s;
+
+}
+
+.discord:hover{
+
+    transform:
+
+    scale(1.04);
+
+    box-shadow:
+
+    0 0 40px rgba(225,29,72,.45);
+
+}
+
+
+.features{
+
+    transition:.35s;
+
+}
+
+.features:hover{
+
+    transform:
+
+    scale(1.04);
+
+    border-color:#E11D48;
+
+}
+
+
+/* ================================
+   Logo Glow
+================================ */
+
+.logo{
+
+    text-shadow:
+
+    0 0 10px rgba(225,29,72,.4),
+
+    0 0 25px rgba(225,29,72,.35);
+
+}
+
+
+/* ================================
+   Scrollbar
+================================ */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#09090B;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#E11D48;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#FF2E63;
+
+}
