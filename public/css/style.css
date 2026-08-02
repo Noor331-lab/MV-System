@@ -1269,3 +1269,483 @@ footer {
     }
 
 }
+
+/* =========================
+   MV DASHBOARD
+========================= */
+
+
+.mv-dashboard-layout {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    gap: 25px;
+
+    padding: 25px;
+
+}
+
+
+
+/* SIDEBAR */
+
+.mv-sidebar {
+
+    width: 270px;
+
+    min-height: calc(100vh - 50px);
+
+    padding: 25px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    backdrop-filter:
+    blur(20px);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    border-radius:
+    20px;
+
+    display:
+    flex;
+
+    flex-direction:
+    column;
+
+}
+
+
+
+.mv-sidebar-logo {
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    15px;
+
+    color:
+    var(--red-primary);
+
+    margin-bottom:
+    30px;
+
+}
+
+
+
+.mv-profile {
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    15px;
+
+    padding:
+    15px;
+
+    border-radius:
+    15px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    margin-bottom:
+    30px;
+
+}
+
+
+
+.mv-avatar {
+
+    width:
+    45px;
+
+    height:
+    45px;
+
+    border-radius:
+    50%;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    background:
+    var(--red-primary);
+
+}
+
+
+
+.mv-dashboard-nav {
+
+    display:
+    flex;
+
+    flex-direction:
+    column;
+
+    gap:
+    10px;
+
+}
+
+
+
+.mv-dashboard-nav a {
+
+    text-decoration:
+    none;
+
+    color:
+    var(--gray);
+
+    padding:
+    14px;
+
+    border-radius:
+    14px;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.mv-dashboard-nav a:hover,
+.mv-dashboard-nav .active {
+
+    background:
+    rgba(225,29,72,0.15);
+
+    color:
+    white;
+
+}
+
+
+
+/* LOGOUT */
+
+.mv-logout {
+
+    margin-top:
+    auto;
+
+    padding:
+    14px;
+
+    border:
+    none;
+
+    border-radius:
+    14px;
+
+    background:
+    var(--red-primary);
+
+    color:
+    white;
+
+    cursor:
+    pointer;
+
+}
+
+
+
+/* MAIN */
+
+.mv-dashboard-main {
+
+    flex:
+    1;
+
+}
+
+
+
+.mv-dashboard-top {
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+    margin-bottom:
+    30px;
+
+}
+
+
+
+.mv-dashboard-top select {
+
+    padding:
+    12px 20px;
+
+    border-radius:
+    12px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    color:
+    white;
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+}
+
+
+
+/* STATS */
+
+
+.mv-dashboard-stats {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:
+    20px;
+
+}
+
+
+
+.mv-stat-card {
+
+    padding:
+    25px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    border-radius:
+    20px;
+
+    transition:
+    var(--transition);
+
+}
+
+
+
+.mv-stat-card:hover {
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 0 25px rgba(225,29,72,0.3);
+
+}
+
+
+
+.mv-stat-card strong {
+
+    display:
+    block;
+
+    margin-top:
+    15px;
+
+    font-size:
+    35px;
+
+    color:
+    var(--red-primary);
+
+}
+
+
+
+/* CHART */
+
+.mv-chart-box,
+.mv-activity {
+
+    margin-top:
+    30px;
+
+    padding:
+    30px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border-radius:
+    20px;
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+}
+
+
+
+.mv-fake-chart {
+
+    height:
+    250px;
+
+    display:
+    flex;
+
+    align-items:
+    end;
+
+    gap:
+    15px;
+
+    margin-top:
+    25px;
+
+}
+
+
+
+.mv-fake-chart div {
+
+    flex:
+    1;
+
+    height:
+    50%;
+
+    background:
+    var(--red-primary);
+
+    border-radius:
+    10px;
+
+}
+
+
+
+/* LOGS */
+
+.mv-log-item {
+
+    margin-top:
+    15px;
+
+    padding:
+    15px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border-radius:
+    15px;
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+}
+
+/* =========================
+   DASHBOARD RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+    .mv-dashboard-layout{
+
+        flex-direction:column;
+
+    }
+
+
+    .mv-sidebar{
+
+        width:100%;
+
+        min-height:auto;
+
+    }
+
+
+    .mv-dashboard-stats{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    .mv-dashboard-layout{
+
+        padding:15px;
+
+    }
+
+
+    .mv-dashboard-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+
+    .mv-dashboard-stats{
+
+        grid-template-columns:
+        1fr;
+
+    }
+
+
+    .mv-sidebar{
+
+        border-radius:15px;
+
+    }
+
+}
